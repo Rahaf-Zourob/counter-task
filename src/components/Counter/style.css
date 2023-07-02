@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+span{
+    font-size: 2rem;
+}
+button{
+    padding: 1.5rem;
+    margin: 1rem;
+    outline: 0;
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+button.increment{
+    background: #f97f7f;
+}
+button.decrement{
+    background: #5cb581;
+}
