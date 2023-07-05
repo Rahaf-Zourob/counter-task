@@ -1,0 +1,9 @@
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 40%;
+    font-weight: bold;
+    font-size: 18px;
+}
