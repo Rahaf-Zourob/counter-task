@@ -1,11 +1,19 @@
-import Counter from "./components/Counter";
+// import Todos from "./components/Counter";
+// function App() {
+//   return(
+//   <div>
+// <Todos />
+//   </div>
+//   );
+// }
+
+// export default App;
+import Todos from "../src/components/Todos";
+
 function App() {
   return (
     <div className="App">
-      <Counter num={0} amount={2} />
-      <Counter num={2} amount={2} />
-      <Counter num={3} amount={2} />
-
+      <Todos />
     </div>
   );
 }
