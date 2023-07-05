@@ -2,33 +2,15 @@ import React, { Component } from "react";
 import "./style.css";
 
 class Counter extends Component {
-    state = {
-      count: this.props.num
-    };
-  render() {
-    const { amount } = this.props;
-    const increment = (amount) => {
-      this.setState(prevState => ({
-        count: prevState.count + amount
-      }));
-    };
-
-    const decrement = (amount) => {
-      if (!(this.state.count <= 0)) {
-        this.setState(prevState => ({
-          count: prevState.count - amount
-        }));
-      }
-    };
-
+    render(){
+        const{increment,decrement,num,id,amount}=this.props
     return (
       <div>
-        <span>{this.state.count}</span>
-        <button className="increment" onClick={()=>increment(amount)}>+</button>
-        <button className="decrement" onClick={()=>decrement(amount)}>-</button>
+        <span>{num}</span>
+        <button className="increment" onClick={()=>increment(id,amount)}>+</button>
+        <button className="decrement" onClick={()=>decrement(id,amount)}>-</button>
       </div>
     );
-  }
-}
+  }}
 
 export default Counter;
