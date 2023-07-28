@@ -1,9 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
-
-class Counter extends Component {
-    render(){
-        const{increment,decrement,num,id,amount}=this.props
+function Counter({increment,decrement,num,id,amount}) {
     return (
       <div className="counter">
         <span>{num}</span>
@@ -11,6 +8,5 @@ class Counter extends Component {
         <button className="decrement" onClick={()=>decrement(id,amount)}>-</button>
       </div>
     );
-  }}
-
+  }
 export default Counter;
